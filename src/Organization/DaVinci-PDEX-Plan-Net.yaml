@@ -24,6 +24,7 @@ elements:
   active: 
     minItems: 1
     type: boolean
+    constant: 'true'
     description: Whether the organization's record is still in active use.
   type: 
     minItems: 1

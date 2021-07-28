@@ -25,14 +25,13 @@ elements:
   active: 
     minItems: 1
     type: boolean
+    constant: 'true'
     description: Whether this practitioner's record is in active use.
   name:
     collection: true
     minItems: 1
     type: HumanName
     description: A name associated with the patient
-    rule:
-      r1: 'family.count() + given.count() >= 1'
     elements: { family: {type: string, required: true}, given: {type: string, collection: true}}
   gender:
     type: code
